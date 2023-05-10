@@ -1,9 +1,20 @@
 #wahoo {
+  outline: none;
   background-color: #00b3b4;
   width: 30em;
-  box-shadow: 0 0 #22C5D6, 1 0 #22C5D6, 2 0 #22C5D6;
+  box-shadow: 1px 1px 2px #0f512C, 2px 2px 2px #15281F
 }
 
+#wahoo:active + .mario-block {
+  animation: jump 0.8s ease-in-out 1;
+}
+
+@keyframes jump {
+  0% { left: 0; }
+  30% { bottom: 200px; left: 200px; transform: rotate(-25deg) }
+  80% { bottom: 0; left: 400px; transform: rotate(0); }
+  100% { bottom:0; left:0; transform: rotate(0); }
+}
 .mario-block {
   display: inline-block;
   position: relative;
