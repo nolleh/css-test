@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+main {
+  scroll-snap-type: y mandatory;
+  overflow: scroll;
+  height: 100vh;
+}
+header,
+.AboutMe,
+.MySkills,
+.Contact,
+.Gallery {
+  scroll-snap-align: start;
+}
+.NavBar {
+  height: 180px;
+  background-color: black;
+  color: white;
+}
+
+.AboutMe {
+  height: 100vh;
+  background-color: lightblue;
+  display:grid
+}
+
+.MySkills {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 30% 50%;
+}
+
+.SkillLeft {
+  background-color: crimson;
+}
+
+.SkillRight {
+  background-color: darkolivegreen;
+}
+
+.Gallery {
+  height: 100vh;
+  background-color: goldenrod;
+}
+
+.Contact {
+  height: 100vh;
+  background-color: mediumseagreen;
+}
